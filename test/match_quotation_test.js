@@ -46,4 +46,12 @@ describe("match_quotation", function(){
     expect(result.line).to.equal(1);
     expect(result.cursor).to.equal(14);
   });
+
+  it("throws an error if beginning character is not quotation mark", function(){
+    matchQuotation('sample', {line: 1, cursor: 2});
+    expect(function() {
+      var sample = '\"hello\"';
+      matchQuotation(sample, {line: 1, cursor: 2});
+    }).to.throw(/No quotation/);
+  });
 });
