@@ -39,4 +39,11 @@ describe("match_quotation", function(){
     expect(result.line).to.equal(2);
     expect(result.cursor).to.equal(6);
   });
+
+  it("ignores quotations that are escaped", function(){
+    var sample = '\"hello\\\"world\"';
+    var result = matchQuotation(sample, {line:1, cursor: 1});
+    expect(result.line).to.equal(1);
+    expect(result.cursor).to.equal(14);
+  });
 });
