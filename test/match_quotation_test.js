@@ -48,7 +48,6 @@ describe("match_quotation", function(){
   });
 
   it("throws an error if beginning character is not quotation mark", function(){
-    matchQuotation('sample', {line: 1, cursor: 2});
     expect(function() {
       var sample = '\"hello\"';
       matchQuotation(sample, {line: 1, cursor: 2});
