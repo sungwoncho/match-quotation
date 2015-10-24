@@ -1,0 +1,27 @@
+{
+  "name": "match-quotation",
+  "version": "0.1.0",
+  "description": "Find matching quotation mark in code",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sungwoncho/match-quotation.git"
+  },
+  "keywords": [
+    "quotation",
+    "match"
+  ],
+  "author": "Sung Won Cho <mikeswcho@gmail.com> (https://sungwoncho.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sungwoncho/match-quotation/issues"
+  },
+  "homepage": "https://github.com/sungwoncho/match-quotation#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  }
+}
